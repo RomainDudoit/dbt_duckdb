@@ -1,0 +1,14 @@
+models:
+  - name: stg_orders
+    columns:
+      - name: status
+        data_tests:
+          - not_empty_string:
+              description: "Le statut ne doit pas être une chaîne vide"
+              config:
+                severity: warn   # scénario 2 : l'instance YAML bat le config() du bloc SQL
+
+# Scénario 3 : data_tests en clé racine, dans un YAML de models/
+# data_tests:
+#   - name: assert_amount_positive
+#     description: "depuis models yml"

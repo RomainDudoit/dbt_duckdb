@@ -1,0 +1,7 @@
+data_tests:
+  - name: assert_amount_positive
+    description: "Le montant doit être >= 0"
+    config:
+      meta:
+        owner: analytics_team
+      severity: error   # scénario 1 : le config() du .sql gagne sur ça

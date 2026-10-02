@@ -1,0 +1,7 @@
+mon_projet:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: lab.duckdb
+      threads: 1

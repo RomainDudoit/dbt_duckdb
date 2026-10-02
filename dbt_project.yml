@@ -1,0 +1,12 @@
+name: mon_projet
+version: "1.0.0"
+profile: mon_projet
+
+models:
+  mon_projet:
+    staging:
+      +materialized: view
+
+# Scénario 4 : décommente pour tester la config au niveau projet
+# data_tests:
+#   +severity: warn

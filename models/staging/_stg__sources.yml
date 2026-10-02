@@ -1,0 +1,4 @@
+sources:
+  - name: jaffle_shop
+    tables:
+      - name: orders
